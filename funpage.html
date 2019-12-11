@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Page</title>
+</head>
+<body>
+<body style="background-color:white;">
+
+  <style>
+  body {
+    background-image: url('artwork21.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  </style>
+
+<h1 style="font-family:Merriweather;">GCP-meter</h1>
+
+<p>Tryk på knappen og find ud af, hvor GCP du er på en skala fra 1 til 100</p>
+
+<button onclick="myFunction()">GCP-meter</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("demo")
+  x.innerHTML = Math.floor((Math.random() * 100) + 1);
+}
+</script>
+
+</body>
+</html>
